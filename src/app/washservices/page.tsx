@@ -52,12 +52,12 @@ export default function WashServices() {
                 <Washcard pic="/carwashgrey.png" name="Exterior" price="10" clubprice="20" services={services} wash={exterior} />
             </div>
             <div className="flex w-full items-center text-center justify-center font-bold text-xl p-5">
-                <p className="text-sm">Don't forget to ask our wash representative for an air fragrance</p>
+                <p className="text-sm">Don&apos;t forget to ask our wash representative for an air fragrance</p>
             </div>
             <div className="flex flex-col w-full items-center justify-center pb-12 p-5 text-xl font-bold text-center">
                 <h1 className="text-4xl p-5">Join the Club</h1>
                 <h2 className="lg:mx-32 p-5">Getting a car wash more than once a month? Consider a club membership for one of our washes and come as much as you want!
-                    Simply download the Everwash app, select our wash "Jersey <a className="text-[#128bee]">Shine</a> & <a className="text-[#f4cb56]">Lube</a>", then
+                    Simply download the Everwash app, select our wash Jersey <a className="text-[#128bee]">Shine</a> & <a className="text-[#f4cb56]">Lube</a>, then
                     select your wash!
                 </h2>
                 <div className="grid grid-cols-2 gap-4">
@@ -83,11 +83,11 @@ export default function WashServices() {
                 <h1 className="text-4xl font-bold pt-12 p-5">Daily Specials</h1>
                 <div className="grid grid-rows-8 gap-3 text-xl font-bold pb-12">
                     <p>Monday</p>
-                    <p>Lady's Day: $3 off any wash</p>
+                    <p>Lady&apos;s Day: $3 off any wash</p>
                     <p>Tuesday</p>
-                    <p>Seniors's Day: 50% off any wash</p>
+                    <p>Seniors&apos;s Day: 50% off any wash</p>
                     <p>Wednesday</p>
-                    <p>Men's Day: $3 off any wash</p>
+                    <p>Men&apos;s Day: $3 off any wash</p>
                     <p>Thursday</p>
                     <p>Jersey Shine Day: $5 off Jersey Shine</p>
                 </div>

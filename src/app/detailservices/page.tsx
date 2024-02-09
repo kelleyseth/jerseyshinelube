@@ -47,7 +47,7 @@ export default function DetailServices() {
                     <p className="text-sm">Needs an appointment for a full day of detailing</p>
                 </div>
                 <div className="pb-10 p-5 text-xl font-bold">
-                    <h2 className="lg:mx-32 p-5">In a rush and can't drop your car off for a day? Go for the Express Details!
+                    <h2 className="lg:mx-32 p-5">In a rush and can&apos;t drop your car off for a day? Go for the Express Details!
                     </h2>
                 </div>
             </div>

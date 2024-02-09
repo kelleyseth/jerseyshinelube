@@ -38,7 +38,7 @@ export default function Slideshow() {
         return () => {
             resetTimeout();
         };
-    }, [index]);
+    }, [index, pictures.length]);
 
     return (
         // TODO add text and button to join club on top of pic, links to washservices
