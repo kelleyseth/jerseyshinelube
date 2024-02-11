@@ -3,7 +3,7 @@
         "services": ["Ceramic Seal", "Tire Shine", "Rain-X", "Extreme Shine Wax",
         "Triple Foam Polish", "Sealer Wax", "Underbody Blast", "Wheels Cleaned",
         "Windows Cleaned", "Door Jambs Wiped", "Dash Wiped", "Interior Vacuum",
-        "Foam Bath"]
+        "Foam Bath, Towel Dry"]
     },
     "Ceramic":
     {
@@ -20,7 +20,8 @@
             "Door Jambs Wiped": true,
             "Dash Wiped": true,
             "Interior Vacuum": true,
-            "Foam Bath": true
+            "Foam Bath": true,
+            "Towel Dry": true
         },
         "prices": {
             "Regular": "28",
@@ -42,7 +43,8 @@
             "Door Jambs Wiped": true,
             "Dash Wiped": true,
             "Interior Vacuum": true,
-            "Foam Bath": true
+            "Foam Bath": true,
+            "Towel Dry": true
         },
         "prices": {
             "Regular": "23",
@@ -64,7 +66,8 @@
             "Door Jambs Wiped": true,
             "Dash Wiped": true,
             "Interior Vacuum": true,
-            "Foam Bath": true
+            "Foam Bath": true,
+            "Towel Dry": true
         },
         "prices": {
             "Regular": "19",
@@ -86,7 +89,8 @@
             "Door Jambs Wiped": true,
             "Dash Wiped": true,
             "Interior Vacuum": true,
-            "Foam Bath": true
+            "Foam Bath": true,
+            "Towel Dry": true
         },
         "prices": {
             "Regular": "16",
@@ -108,7 +112,8 @@
             "Door Jambs Wiped": false,
             "Dash Wiped": false,
             "Interior Vacuum": false,
-            "Foam Bath": false
+            "Foam Bath": true,
+            "Towel Dry": true
         },
         "prices": {
             "Regular": "10",
