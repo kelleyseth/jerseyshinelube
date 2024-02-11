@@ -29,7 +29,7 @@ export default function DetailServices() {
 
     return (
         <div>
-            <div className="flex flex-col h-fit bg-[#f4cb56] p-8 text-center w-full">
+            <div className="flex flex-col h-fit bg-[#b59410] p-8 text-center w-full">
                 <h1 className="text-6xl font-bold pt-24 p-5">Keep Your Car Running Like New</h1>
                 <p className="text-xl font-bold pb-24">Pull up for a quick oil change and get a free wash</p>
                 <p className="text-md">No appointment needed</p>
