@@ -12,7 +12,7 @@ export default function Washcard(props: { pic: string; name: string; price: stri
                 priority
                 className="relative z-1 top-4"
             />
-            <div className="z-2 group rounded-lg border px-20 py-16 border-white"
+            <div className="z-2 group rounded-lg border px-8 py-16 border-white"
             >
             <h1 className="flex items-center justify-center pb-5 font-bold text-3xl">{props.name}</h1>
                 {props.wash?.map((item, index) => (

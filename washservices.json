@@ -1,0 +1,118 @@
+{
+    "Services": {
+        "services": ["Ceramic Seal", "Tire Shine", "Rain-X", "Extreme Shine Wax",
+        "Triple Foam Polish", "Sealer Wax", "Underbody Blast", "Wheels Cleaned",
+        "Windows Cleaned", "Door Jambs Wiped", "Dash Wiped", "Interior Vacuum",
+        "Foam Bath"]
+    },
+    "Ceramic":
+    {
+        "services": {
+            "Ceramic Seal": true,
+            "Tire Shine": true,
+            "Rain-X": true,
+            "Extreme Shine Wax": true,
+            "Triple Foam Polish": true,
+            "Sealer Wax": true,
+            "Underbody Blast": true,
+            "Wheels Cleaned": true,
+            "Windows Cleaned": true,
+            "Door Jambs Wiped": true,
+            "Dash Wiped": true,
+            "Interior Vacuum": true,
+            "Foam Bath": true
+        },
+        "prices": {
+            "Regular": "28",
+            "Club": "49"
+        }
+    },
+    "JerseyShine":
+    {
+        "services": {
+            "Ceramic Seal": false,
+            "Tire Shine": true,
+            "Rain-X": true,
+            "Extreme Shine Wax": true,
+            "Triple Foam Polish": true,
+            "Sealer Wax": true,
+            "Underbody Blast": true,
+            "Wheels Cleaned": true,
+            "Windows Cleaned": true,
+            "Door Jambs Wiped": true,
+            "Dash Wiped": true,
+            "Interior Vacuum": true,
+            "Foam Bath": true
+        },
+        "prices": {
+            "Regular": "23",
+            "Club": "42"
+        }
+    },
+    "Deluxe":
+    {
+        "services": {
+            "Ceramic Seal": false,
+            "Tire Shine": false,
+            "Rain-X": false,
+            "Extreme Shine Wax": false,
+            "Triple Foam Polish": true,
+            "Sealer Wax": true,
+            "Underbody Blast": true,
+            "Wheels Cleaned": true,
+            "Windows Cleaned": true,
+            "Door Jambs Wiped": true,
+            "Dash Wiped": true,
+            "Interior Vacuum": true,
+            "Foam Bath": true
+        },
+        "prices": {
+            "Regular": "19",
+            "Club": "36"
+        }
+    },
+    "Basic":
+    {
+        "services": {
+            "Ceramic Seal": false,
+            "Tire Shine": false,
+            "Rain-X": false,
+            "Extreme Shine Wax": false,
+            "Triple Foam Polish": false,
+            "Sealer Wax": false,
+            "Underbody Blast": false,
+            "Wheels Cleaned": true,
+            "Windows Cleaned": true,
+            "Door Jambs Wiped": true,
+            "Dash Wiped": true,
+            "Interior Vacuum": true,
+            "Foam Bath": true
+        },
+        "prices": {
+            "Regular": "16",
+            "Club": "32"
+        }
+    },
+    "Exterior":
+    {
+        "services": {
+            "Ceramic Seal": false,
+            "Tire Shine": false,
+            "Rain-X": false,
+            "Extreme Shine Wax": false,
+            "Triple Foam Polish": false,
+            "Sealer Wax": false,
+            "Underbody Blast": false,
+            "Wheels Cleaned": false,
+            "Windows Cleaned": false,
+            "Door Jambs Wiped": false,
+            "Dash Wiped": false,
+            "Interior Vacuum": false,
+            "Foam Bath": false
+        },
+        "prices": {
+            "Regular": "10",
+            "Club": "20"
+        }
+    }
+}

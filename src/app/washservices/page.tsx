@@ -1,33 +1,19 @@
 import Carousel from "../components/WashCarousel";
 import Washcard from "../components/Washcard";
 import Link from "next/link";
+import { readFileSync } from 'fs';
+
 
 export default function WashServices() {
 
-    const services = ["Ceramic Seal", "Tire Shine", "Rain-X", "Extreme Shine Wax",
-        "Triple Foam Polish", "Sealer Wax", "Underbody Blast", "Wheels Cleaned",
-        "Windows Cleaned", "Door Jambs Wiped", "Dash Wiped", "Interior Vacuum",
-        "Foam Bath", "Towel Dried"];
-    const ceramic = [true, true, true, true,
-        true, true, true, true,
-        true, true, true, true,
-        true, true];
-    const jerseyshine = [false, true, true, true,
-        true, true, true, true,
-        true, true, true, true,
-        true, true];
-    const deluxe = [false, false, false, false,
-        true, true, true, true,
-        true, true, true, true,
-        true, true];
-    const basic = [false, false, false, false,
-        false, false, false, true,
-        true, true, true, true,
-        true, true];
-    const exterior = [false, false, false, false,
-        false, false, false, false,
-        false, false, false, false,
-        true, true];
+    let washfile = JSON.parse(readFileSync('./washservices.json', 'utf-8'))
+
+    const services = washfile.Services.services;
+    const ceramic = Object.values(washfile.Ceramic.services) as Array<boolean>;
+    const jerseyshine = Object.values(washfile.JerseyShine.services) as Array<boolean>;
+    const deluxe = Object.values(washfile.Deluxe.services) as Array<boolean>;
+    const basic = Object.values(washfile.Basic.services) as Array<boolean>;
+    const exterior = Object.values(washfile.Exterior.services) as Array<boolean>;
 
     return (
         <div>
@@ -45,11 +31,11 @@ export default function WashServices() {
             </div>
             {/* TODO cards extend past parent when resized */}
             <div className="max-lg:hidden flex items-center w-full justify-between p-5">
-                <Washcard pic="/carwashred.png" name="Ceramic" price="28" clubprice="49" services={services} wash={ceramic} />
-                <Washcard pic="/carwashgold.png" name="Jersey Shine" price="23" clubprice="42" services={services} wash={jerseyshine} />
-                <Washcard pic="/carwashsilver.png" name="Deluxe" price="19" clubprice="36" services={services} wash={deluxe} />
-                <Washcard pic="/carwashblue.png" name="Basic" price="16" clubprice="32" services={services} wash={basic} />
-                <Washcard pic="/carwashgrey.png" name="Exterior" price="10" clubprice="20" services={services} wash={exterior} />
+                <Washcard pic="/carwashred.png" name="Ceramic" price={washfile.Ceramic.prices.Regular} clubprice={washfile.Ceramic.prices.Club} services={services} wash={ceramic} />
+                <Washcard pic="/carwashgold.png" name="Jersey Shine" price={washfile.JerseyShine.prices.Regular} clubprice={washfile.JerseyShine.prices.Club} services={services} wash={jerseyshine} />
+                <Washcard pic="/carwashsilver.png" name="Deluxe" price={washfile.Deluxe.prices.Regular} clubprice={washfile.Deluxe.prices.Club} services={services} wash={deluxe} />
+                <Washcard pic="/carwashblue.png" name="Basic" price={washfile.Basic.prices.Regular} clubprice={washfile.Basic.prices.Club} services={services} wash={basic} />
+                <Washcard pic="/carwashgrey.png" name="Exterior" price={washfile.Exterior.prices.Regular} clubprice={washfile.Exterior.prices.Club} services={services} wash={exterior} />
             </div>
             <div className="flex w-full items-center text-center justify-center font-bold text-xl p-5">
                 <p className="text-sm">Don&apos;t forget to ask our wash representative for an air fragrance</p>
