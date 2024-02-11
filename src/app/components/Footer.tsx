@@ -11,11 +11,11 @@ export default function Footer() {
                     width={175}
                     height={75}
                 />
-                <div className="flex flex-col items-center justify-between max-lg:pb-10">
+                <div className="flex flex-col items-center justify-between max-lg:pb-10 gap-2">
                     <h1 className="text-xl font-bold text-[#128bee] max-lg:pt-5 pb-5">Hours of Operation</h1>
-                    <p>Sun: 10am-3pm *Car Wash Only*</p>
                     <p>Mon-Fri: 9am-5pm</p>
                     <p>Sat: 9am-4pm</p>
+                    <p>Sun: 10am-3pm *Car Wash Only*, *Dates vary, call ahead*</p>
                 </div>
                 <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5 justify-center text-center items-center">
                     <Link //TODO dead links below, create folder and tsx pages for them
@@ -35,7 +35,16 @@ export default function Footer() {
                         Privacy Policy
                     </Link>
                 </div>
-                <div className="flex flex-col items-center justify-between">
+                <div className="flex flex-col items-center justify-between gap-2">
+                    <h2 className="text-xl font-bold text-[#128bee] max-lg:pt-10 pb-5">Club Suppport</h2>
+                    <a href="tel:12156188808">(215) 618-8808</a>
+                    <a href="mailto:support@everwash.com">support@everwash.com</a>
+                </div>
+                <div className="flex flex-col items-center justify-between gap-2">
+                    <h2 className="text-xl font-bold text-[#f4cb56] max-lg:pt-10 pb-5">Contact Us</h2>
+                    <a href="tel:16097140940">(609) 714-0940</a>
+                </div>
+                <div className="flex flex-col items-center justify-between gap-2">
                     <h2 className="text-xl font-bold text-[#f4cb56] max-lg:pt-10 pb-5">Connect With Us</h2>
                     <Link
                         href="https://facebook.com/jerseyshineandlube/"
