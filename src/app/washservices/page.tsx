@@ -29,8 +29,7 @@ export default function WashServices() {
             <div className="lg:hidden flex items-center w-full justify-between p-5">
                 <Carousel services={services} ceramic={ceramic} jerseyshine={jerseyshine} deluxe={deluxe} basic={basic} exterior={exterior} />
             </div>
-            {/* TODO cards extend past parent when resized */}
-            <div className="max-lg:hidden flex items-center w-full justify-between p-5">
+            <div className="max-lg:hidden flex items-center w-full justify-center gap-5 p-5">
                 <Washcard pic="/carwashred.png" name="Ceramic" price={washfile.Ceramic.prices.Regular} clubprice={washfile.Ceramic.prices.Club} services={services} wash={ceramic} />
                 <Washcard pic="/carwashgold.png" name="Jersey Shine" price={washfile.JerseyShine.prices.Regular} clubprice={washfile.JerseyShine.prices.Club} services={services} wash={jerseyshine} />
                 <Washcard pic="/carwashsilver.png" name="Deluxe" price={washfile.Deluxe.prices.Regular} clubprice={washfile.Deluxe.prices.Club} services={services} wash={deluxe} />
