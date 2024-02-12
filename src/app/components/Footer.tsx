@@ -5,36 +5,40 @@ export default function Footer() {
     return (
         <div>
             <div className="max-lg:flex-col flex items-center justify-between p-5">
-                <Image
-                    src="/logofull.jpg"
-                    alt="full"
-                    width={175}
-                    height={75}
-                />
+                <div className="flex flex-col items-center justify-between max-lg:pb-10 gap-2">
+
+                    <Image
+                        src="/logofull.jpg"
+                        alt="full"
+                        width={175}
+                        height={75}
+                    />
+                    <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5 justify-center text-center items-center">
+                        <Link //TODO dead links below, create folder and tsx pages for them
+                            href="">
+                            FAQ
+                        </Link>
+                        <Link
+                            href="">
+                            About Us
+                        </Link>
+                        <Link
+                            href="">
+                            Terms Of Service
+                        </Link>
+                        <Link
+                            href="">
+                            Privacy Policy
+                        </Link>
+                    </div>
+                </div>
                 <div className="flex flex-col items-center justify-between max-lg:pb-10 gap-2">
                     <h1 className="text-xl font-bold text-[#128bee] max-lg:pt-5 pb-5">Hours of Operation</h1>
                     <p>Mon-Fri: 9am-5pm</p>
                     <p>Sat: 9am-4pm</p>
                     <p>Sun: 10am-3pm *Car Wash Only*, *Dates vary, call ahead*</p>
                 </div>
-                <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5 justify-center text-center items-center">
-                    <Link //TODO dead links below, create folder and tsx pages for them
-                        href="">
-                        FAQ
-                    </Link>
-                    <Link
-                        href="">
-                        About Us
-                    </Link>
-                    <Link
-                        href="">
-                        Terms Of Service
-                    </Link>
-                    <Link
-                        href="">
-                        Privacy Policy
-                    </Link>
-                </div>
+
                 <div className="flex flex-col items-center justify-between gap-2">
                     <h2 className="text-xl font-bold text-[#128bee] max-lg:pt-10 pb-5">Club Suppport</h2>
                     <a href="tel:12156188808">(215) 618-8808</a>
