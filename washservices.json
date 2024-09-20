@@ -107,7 +107,7 @@
             "Triple Foam Polish": false,
             "Sealer Wax": false,
             "Underbody Blast": false,
-            "Wheels Cleaned": false,
+            "Wheels Cleaned": true,
             "Windows Cleaned": false,
             "Door Jambs Wiped": false,
             "Dash Wiped": false,
